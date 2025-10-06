@@ -16,6 +16,15 @@ Quick links
 - Examples: `defensive_programming_v2/examples/`
 - Solutions: `defensive_programming_v2/solutions/`
 
+GitHub links
+- Repository: https://github.com/LibertyQuinzel/defensive_programming_v2
+- Design-by-Contract assignment: https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/03-design-by-contract/assignment.md
+- Topics index: https://github.com/LibertyQuinzel/defensive_programming_v2/tree/main/defensive_programming_v2/topics
+- Autograder: https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/autograder.py
+- Hidden tests (CI): https://github.com/LibertyQuinzel/defensive_programming_v2/tree/main/defensive_programming_v2/grading/hidden_tests
+- Examples folder: https://github.com/LibertyQuinzel/defensive_programming_v2/tree/main/defensive_programming_v2/examples
+
+
 Quick start (copy/paste)
 
 1) Create and activate a virtual environment (recommended)
@@ -84,11 +93,14 @@ PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/gr
 ```
 
 Per-topic quick links
-- 00 — Intro: `defensive_programming_v2/topics/00-intro/`
-- 01 — Guard Clauses: `defensive_programming_v2/topics/01-guard-clauses/`
-- 02 — Sentinels: `defensive_programming_v2/topics/02-sentinels/`
-- 03 — Design by Contract: `defensive_programming_v2/topics/03-design-by-contract/`
-- 04 — Decorators: `defensive_programming_v2/topics/04-decorators/`
+
+| Topic | Assignment (local) | Assignment (GitHub) |
+|---|---|---|
+| 00 — Intro | `defensive_programming_v2/topics/00-intro/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/00-intro/assignment.md) |
+| 01 — Guard Clauses | `defensive_programming_v2/topics/01-guard-clauses/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/01-guard-clauses/assignment.md) |
+| 02 — Sentinels | `defensive_programming_v2/topics/02-sentinels/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/02-sentinels/assignment.md) |
+| 03 — Design by Contract | `defensive_programming_v2/topics/03-design-by-contract/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/03-design-by-contract/assignment.md) |
+| 04 — Decorators | `defensive_programming_v2/topics/04-decorators/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/04-decorators/assignment.md) |
 
 Troubleshooting
 
@@ -100,6 +112,3 @@ License & contact
 
 For questions, see `instructor_notes.md` or open an issue in the repository.
 
----
-
-If you want more, I can add a table of direct `assignment.md` links or a short social README for sharing.
