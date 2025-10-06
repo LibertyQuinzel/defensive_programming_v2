@@ -54,18 +54,41 @@ def validated_add(a: Number, b: Number) -> float:
     return float(a) + float(b)
 
 
-def guarded_divide(a, b):
-        """Guarded division with small, clear guard clauses.
+def guarded_divide(a: Number, b: Number) -> float:
+    """Guarded division with small, clear guard clauses.
 
-        Expected behavior (what instructor Part A tests assert):
-        - If ``a`` or ``b`` is not a number (int/float) or is a boolean, raise
-            TypeError.
-        - If ``b`` equals zero, raise ValueError.
-        - Otherwise return the numeric quotient ``a / b``.
+    Args:
+        a: The dividend (number to be divided)
+        b: The divisor (number to divide by)
 
-        Students should implement this function to satisfy the tests in the
-        instructor Part A test suite.
-        """
-        # TODO: Students must implement this for Part B. For TDD flow this
-        # skeleton intentionally raises until implemented.
-        raise NotImplementedError("Implement guarded_divide(a, b) in the skeleton for Part B")
+    Returns:
+        The quotient as a float
+
+    Raises:
+        TypeError: If ``a`` or ``b`` is not a number (int/float) or is a boolean
+        ValueError: If ``b`` equals zero
+
+    Expected behavior (what instructor Part A tests assert):
+    - If ``a`` or ``b`` is not a number (int/float) or is a boolean, raise
+        TypeError.
+    - If ``b`` equals zero, raise ValueError.
+    - Otherwise return the numeric quotient ``a / b``.
+
+    Students should implement this function to satisfy the tests in the
+    instructor Part A test suite.
+
+    Implementation hints:
+    - Use the provided ``_is_number()`` helper function for validation
+    - Check types first, then check for zero division
+    - Remember: bool subclasses int in Python, so isinstance(True, int) is True!
+    """
+    # TODO: Students must implement this for Part B. For TDD flow this
+    # skeleton intentionally raises until implemented.
+    #
+    # Suggested implementation pattern:
+    # 1. Check if 'a' is a valid number using _is_number()
+    # 2. Check if 'b' is a valid number using _is_number()  
+    # 3. Check if 'b' equals zero
+    # 4. Return the division result as float
+    
+    raise NotImplementedError("Implement guarded_divide(a, b) in the skeleton for Part B")

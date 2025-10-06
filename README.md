@@ -1,7 +1,68 @@
 
 # Defensive Programming Course — Beginner Friendly
 
-This repository contains a short, hands-on course on defensive programming in Python. It is organized into topic folders with assignments, starter code, skeletons, and tests so learners can practice both tests-first and implementation-first workflows.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://github.com/LibertyQuinzel/defensive_programming_v2/workflows/Tests/badge.svg)](https://github.com/LibertyQuinzel/defensive_programming_v2/actions)
+
+This repository contains a hands-on course on **defensive programming in Python**. Learn to write robust, error-resistant code through practical exercises covering guard clauses, sentinels, design-by-contract, and decorators.
+
+## 🎯 Course Overview
+
+**Duration**: ~6-8 hours | **Level**: Beginner to Intermediate | **Prerequisites**: Basic Python knowledge
+
+### What You'll Master
+- ✅ **Guard Clauses**: Early input validation and error prevention
+- ✅ **Sentinel Objects**: Elegant alternatives to exceptions for "not found" cases  
+- ✅ **Design by Contract**: Pre/post-conditions with decorators
+- ✅ **Test-Driven Development**: Writing tests before implementation
+- ✅ **Defensive Patterns**: Real-world error handling techniques
+
+## 🚀 Quick Start
+
+### For Students
+```bash
+# 1. Clone and navigate to the repository
+git clone https://github.com/LibertyQuinzel/defensive_programming_v2.git
+cd defensive_programming_v2
+
+# 2. Run the automated setup
+./setup_student.sh
+
+# 3. Start learning!
+cd defensive_programming_v2/topics/00-intro
+python starter.py
+```
+
+**📖 New to the course?** Read the [**Student Guide**](STUDENT_GUIDE.md) for detailed instructions and tips!
+
+### For Instructors
+```bash
+# Quick verification that everything works
+python -m defensive_programming_v2.autograder
+python defensive_programming_v2/topics/run_partA_tests.py
+```
+
+See [**Instructor Notes**](instructor_notes.md) for classroom integration.
+
+## 📚 Course Structure
+
+| Topic | Concept | Key Skills | Duration |
+|-------|---------|------------|----------|
+| [**00-intro**](defensive_programming_v2/topics/00-intro/) | Basic guard clauses | Input validation, early returns | 1 hour |
+| [**01-guard-clauses**](defensive_programming_v2/topics/01-guard-clauses/) | Defensive arithmetic | Type checking, error handling | 1.5 hours |
+| [**02-sentinels**](defensive_programming_v2/topics/02-sentinels/) | Sentinel objects | Alternative to exceptions | 1.5 hours |
+| [**03-design-by-contract**](defensive_programming_v2/topics/03-design-by-contract/) | Pre/post-conditions | Contract programming | 2 hours |
+| [**04-decorators**](defensive_programming_v2/topics/04-decorators/) | Validation decorators | Reusable patterns | 2 hours |
+
+### Each Topic Includes
+- 📋 **Assignment guide** with learning objectives
+- 🎮 **Interactive starter** to explore concepts  
+- ✏️ **Test templates** for hands-on practice
+- 🔧 **Implementation skeletons** to complete
+- ✅ **Instructor tests** providing specifications
+
+## 🛠️ Project Structure
 
 Highlights
 - `topics/` — per-topic assignments, starter code, skeletons, and tests

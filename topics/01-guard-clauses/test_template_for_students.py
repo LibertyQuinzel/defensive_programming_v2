@@ -12,11 +12,16 @@ Run the file from the repository root:
     PYTHONPATH=. pytest -q defensive_programming_v2/topics/01-guard-clauses/test_template_for_students.py
 
 Edit or extend these tests before implementing code (TDD workflow).
+
+Learning objectives:
+- Practice writing comprehensive test cases for edge cases
+- Understand how guard clauses protect against invalid inputs
+- Learn to handle type validation in Python (especially bool vs int)
+- Implement defensive division with clear error messages
 """
 
 from pathlib import Path
 import importlib.util
-import math
 import pytest
 
 # Load the sibling skeleton.py as a module so tests run against that file
@@ -44,6 +49,51 @@ def test_validated_add_rejects_bool():
     """Booleans should be rejected by validated_add (students should assert this)."""
     with pytest.raises(TypeError):
         skeleton.validated_add(True, 1)
+
+
+# TODO: Add more comprehensive tests for validated_add
+# Suggested test cases (uncomment and implement):
+
+# def test_validated_add_accepts_floats():
+#     """Test that floating point numbers work correctly."""
+#     # TODO: Test with float inputs like 2.5 + 3.7
+#     pass
+
+# def test_validated_add_accepts_mixed_int_float():
+#     """Test mixing int and float arguments."""
+#     # TODO: Test cases like validated_add(2, 3.5) and validated_add(2.5, 3)
+#     pass
+
+# def test_validated_add_rejects_strings():
+#     """String inputs should raise TypeError."""
+#     # TODO: Test with string inputs like "10" or "hello"
+#     pass
+
+# def test_validated_add_rejects_none():
+#     """None input should raise TypeError."""
+#     # TODO: Test with None as one or both arguments
+#     pass
+
+# def test_validated_add_rejects_lists():
+#     """List inputs should raise TypeError."""
+#     # TODO: Test with list inputs like [1, 2] or []
+#     pass
+
+# def test_validated_add_rejects_nan():
+#     """NaN (Not a Number) should be rejected."""
+#     # TODO: Test with float('nan') as input
+#     # Hint: Use float('nan') to create a NaN value
+#     pass
+
+# def test_validated_add_rejects_infinity():
+#     """Infinite values should be rejected."""
+#     # TODO: Test with float('inf') and float('-inf')
+#     pass
+
+# def test_validated_add_both_args_invalid():
+#     """Test behavior when both arguments are invalid."""
+#     # TODO: What happens when both args are invalid? Which error is raised first?
+#     pass
 
 
 #########################################################################
@@ -84,6 +134,45 @@ def test_guarded_divide_reject_nan():
     nan = float("nan")
     with pytest.raises((TypeError, ValueError)):
         skeleton.guarded_divide(nan, 1)
+
+
+# Additional test stubs for students to implement
+# (These help ensure comprehensive coverage of guarded_divide)
+
+# def test_guarded_divide_float_inputs():
+#     """Test division with floating point numbers."""
+#     # TODO: Test cases like guarded_divide(7.5, 2.5)
+#     pass
+
+# def test_guarded_divide_negative_numbers():
+#     """Test division with negative numbers."""
+#     # TODO: Test cases like guarded_divide(-10, 2) and guarded_divide(10, -2)
+#     pass
+
+# def test_guarded_divide_zero_dividend():
+#     """Test that 0 divided by non-zero number works."""
+#     # TODO: Test guarded_divide(0, 5) - should this work?
+#     pass
+
+# def test_guarded_divide_first_arg_invalid():
+#     """Test TypeError when first argument is invalid."""
+#     # TODO: Test with invalid first argument
+#     pass
+
+# def test_guarded_divide_second_arg_invalid():
+#     """Test TypeError when second argument is invalid."""
+#     # TODO: Test with invalid second argument
+#     pass
+
+# def test_guarded_divide_both_args_invalid():
+#     """Test behavior when both arguments are invalid."""
+#     # TODO: Which error should be raised first?
+#     pass
+
+# def test_guarded_divide_returns_float():
+#     """Verify that the return type is always float."""
+#     # TODO: Test that integer division returns float (e.g., 5/2 -> 2.5)
+#     pass
 
 
 # End of template

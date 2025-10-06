@@ -3,13 +3,24 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*$py.class
 
 # Virtualenv
 .venv/
 venv/
+env/
+ENV/
 
 # Pytest cache
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
 
 # Editor dirs
 .vscode/
@@ -17,12 +28,47 @@ venv/
 
 # Byte-compiled / distribution
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Jupyter
 .ipynb_checkpoints/
 
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 Thumbs.db
+ehthumbs.db
+
+# Autograder results
+autograder_result.json
+
+# Student work directories (when repo is used as template)
+student_work/
+submissions/
+
+# Environment files
+.env
+.env.local

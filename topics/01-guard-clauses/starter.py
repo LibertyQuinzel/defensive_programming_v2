@@ -3,6 +3,11 @@
 Complete the TODO comments. Keep functions small and add simple checks.
 """
 
+from typing import Union
+
+# Type alias for numeric types we accept
+Number = Union[int, float]
+
 """
 Explanation (short):
 
@@ -29,8 +34,16 @@ After you implement the checks, run the topic tests (if available) to verify
 the behavior.
 """
 
-def divide(a, b):
+
+def divide(a: Number, b: Number) -> float:
     """Divide two numbers with minimal checks (student should harden this).
+
+    Args:
+        a: The dividend (number to be divided)
+        b: The divisor (number to divide by)
+
+    Returns:
+        The quotient as a float
 
     Currently this function trusts that the caller supplies valid numeric
     operands. Your task is to add explicit guard clauses to validate inputs
