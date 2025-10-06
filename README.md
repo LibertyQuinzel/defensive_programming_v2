@@ -1,0 +1,157 @@
+# Defensive Programming Course (Beginner Friendly)
+
+This mini-course teaches defensive programming for learners who are new to professional Python development. It uses small, guided steps and starter code so students can try things locally and learn by doing.
+
+What you'll find here
+- `topics/` — per-topic folders with assignments, starters, skeletons, examples, student test templates, and instructor tests
+- `autograder.py` — minimal autograder that runs tests and writes a JSON result
+- `requirements.txt` — development dependencies (pytest, flake8)
+
+Notes about tests and the two-part workflow
+
+Each topic uses a two-part workflow so you can practice both tests-first and implementation-first approaches. Key conventions:
+
+- Student test templates: look for `test_template_for_students*.py` in each topic folder. Copy or rename these when you start Part 1 (tests-first) and add your tests there.
+- Instructor canonical Part A tests: instructor-provided Part A tests live under `topics/<NN>-<name>/instructor_tests/` and are named like `test_partA_*.py`. These are the authoritative specs for implementation-first exercises.
+- Part A runner: a small helper at `topics/run_partA_tests.py` helps discover instructor Part A tests across topics and can invoke pytest for each discovered file. You can also run the tests directly with pytest as shown per-topic below.
+
+Quick start (explicit, copy/paste)
+
+1) Create and activate a virtual environment (recommended)
+
+```bash
+# from repo root
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2) Install the course dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r defensive_programming_v2/requirements.txt
+```
+
+3) Run the tests to confirm everything is working
+
+```bash
+# Run the full test suite (use the package folder as PYTHONPATH)
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q
+
+# Or run the autograder to produce a JSON report
+PYTHONPATH=$(pwd)/defensive_programming_v2 python -m defensive_programming_v2.autograder
+cat autograder_result.json || true
+```
+
+If you are new to Python or the command line, follow the `topics/` folders for each assignment — they contain minimal skeletons and explicit instructions.
+
+
+Student checklist (copy this to work from):
+
+1. Set up your environment
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+# Defensive Programming Course — Beginner Friendly
+
+This repository contains a short, hands-on course on defensive programming in Python. It is organized into topic folders with assignments, starter code, skeletons, and tests so learners can practice both tests-first and implementation-first workflows.
+
+Highlights
+- `topics/` — per-topic assignments, starter code, skeletons, and tests
+- `autograder.py` — run the autograder locally to reproduce CI grading
+- `requirements.txt` — development dependencies (pytest, flake8)
+
+Quick links
+- Course package: `defensive_programming_v2/`
+- Topics folder: `defensive_programming_v2/topics/`
+- Autograder: `defensive_programming_v2/autograder.py`
+- Hidden (CI) tests: `defensive_programming_v2/grading/hidden_tests/`
+- Examples: `defensive_programming_v2/examples/`
+- Solutions: `defensive_programming_v2/solutions/`
+
+Quick start (copy/paste)
+
+1) Create and activate a virtual environment (recommended)
+
+```bash
+# from repo root
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2) Install the course dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r defensive_programming_v2/requirements.txt
+```
+
+3) Run the tests (examples)
+
+```bash
+# Run the full test suite
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q
+
+# Run the autograder to produce autograder_result.json
+PYTHONPATH=$(pwd)/defensive_programming_v2 python -m defensive_programming_v2.autograder
+cat autograder_result.json || true
+```
+
+Running topic tests (common commands)
+
+-- Run a student test template (Part 1, tests-first):
+
+```bash
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/topics/01-guard-clauses/test_template_for_students_01_guarded.py
+```
+
+- Run the instructor Part A tests for a topic (implementation-first spec):
+
+```bash
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/topics/01-guard-clauses/instructor_tests/test_partA_01_guarded_divide.py
+```
+
+- Discover and run all instructor Part A tests across topics with the helper:
+
+```bash
+PYTHONPATH=$(pwd)/defensive_programming_v2 python defensive_programming_v2/topics/run_partA_tests.py
+```
+
+- Run all tests for a single topic:
+
+```bash
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/topics/03-design-by-contract
+```
+
+Student workflow (recommended)
+
+1. Read the assignment: `defensive_programming_v2/topics/<NN>-<name>/assignment.md`
+2. Run the starter examples in `starter.py` to understand the intent.
+3. For tests-first: copy or rename the student test template `test_template_for_students_*.py` and write tests.
+4. Implement the functions in `skeleton.py` and run the topic tests (`pytest` on the topic folder).
+5. Optionally run the autograder and the hidden tests before submitting:
+
+```bash
+PYTHONPATH=$(pwd)/defensive_programming_v2 python -m defensive_programming_v2.autograder
+PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/grading/hidden_tests
+```
+
+Per-topic quick links
+- 00 — Intro: `defensive_programming_v2/topics/00-intro/`
+- 01 — Guard Clauses: `defensive_programming_v2/topics/01-guard-clauses/`
+- 02 — Sentinels: `defensive_programming_v2/topics/02-sentinels/`
+- 03 — Design by Contract: `defensive_programming_v2/topics/03-design-by-contract/`
+- 04 — Decorators: `defensive_programming_v2/topics/04-decorators/`
+
+Troubleshooting
+
+- If pytest can't find modules, ensure PYTHONPATH points at the package directory:
+	`export PYTHONPATH=$(pwd)/defensive_programming_v2`
+- Run style checks with `flake8 defensive_programming_v2 --max-line-length=100`.
+
+License & contact
+
+For questions, see `instructor_notes.md` or open an issue in the repository.
+
+---
+
+If you want more, I can add a table of direct `assignment.md` links or a short social README for sharing.
