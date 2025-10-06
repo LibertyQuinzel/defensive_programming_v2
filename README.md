@@ -94,13 +94,13 @@ PYTHONPATH=$(pwd)/defensive_programming_v2 pytest -q defensive_programming_v2/gr
 
 Per-topic quick links
 
-| Topic | Assignment (local) | Assignment (GitHub) |
-|---|---|---|
-| 00 — Intro | `defensive_programming_v2/topics/00-intro/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/00-intro/assignment.md) |
-| 01 — Guard Clauses | `defensive_programming_v2/topics/01-guard-clauses/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/01-guard-clauses/assignment.md) |
-| 02 — Sentinels | `defensive_programming_v2/topics/02-sentinels/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/02-sentinels/assignment.md) |
-| 03 — Design by Contract | `defensive_programming_v2/topics/03-design-by-contract/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/03-design-by-contract/assignment.md) |
-| 04 — Decorators | `defensive_programming_v2/topics/04-decorators/assignment.md` | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/04-decorators/assignment.md) |
+| Topic | Assignment (GitHub) |
+|---|---|
+| 00 — Intro | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/00-intro/assignment.md) |
+| 01 — Guard Clauses | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/01-guard-clauses/assignment.md) |
+| 02 — Sentinels | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/02-sentinels/assignment.md) |
+| 03 — Design by Contract | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/03-design-by-contract/assignment.md) |
+| 04 — Decorators | [View on GitHub](https://github.com/LibertyQuinzel/defensive_programming_v2/blob/main/defensive_programming_v2/topics/04-decorators/assignment.md) |
 
 Troubleshooting
 
